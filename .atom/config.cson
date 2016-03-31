@@ -1,0 +1,31 @@
+"*":
+  core:
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".sass-cache"
+      ".vagrant"
+    ]
+    projectHome: "~/Sites"
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "3a069951-16c4-8a66-6217-95f58842c19d"
+  "file-icons":
+    coloured: false
+    forceShow: true
+  "find-and-replace": {}
+  "fuzzy-finder":
+    ignoredNames: [
+      "node_modules"
+      "vendor"
+    ]
+  "git-plus": {}
+  "pinned-tabs": {}
+  "tree-view":
+    hideIgnoredNames: true
+  welcome:
+    showOnStartup: false

@@ -1,0 +1,45 @@
+'.source.feature':
+    'Background':
+        'prefix': 'b',
+        'body': 'Background:\n\t$0'
+    'Feature':
+        'prefix': 'f',
+        'body': 'Feature: ${1:Feature}\n\t$0'
+    'Scenario':
+        'prefix': 's',
+        'body': 'Scenario: ${1:Scenario}\n\t\$0'
+
+'.source.php':
+    'Belongs to many relation':
+        'prefix': 'belongstomany'
+        'body': 'return $this->belongsToMany(${1:model});'
+    'Belongs to relation':
+        'prefix': 'belongsto'
+        'body': 'return $this->belongsTo(${1:model});'
+    'DocBlock':
+        'prefix': 'doc'
+        'body': '/**\n * ${1:Method description.}\n *${2:\n * @param  ${3:type}  \$${4:param}}${5:\n * @return ${6:return type}}\n */\n$0'
+    'DocBlock parameter':
+        'prefix': 'param'
+        'body': ' * @param  ${1:type}\n \$${2:name}\n$0'
+    'DocBlock return':
+        'prefix': 'return'
+        'body': ' * @return ${1:type}\n$0'
+    'DocBlock throws':
+        'prefix': 'throws'
+        'body': ' * @throws ${1:type}\n$0'
+    'Has many relation':
+        'prefix': 'hasmany'
+        'body': 'return $this->hasMany(${1:model});'
+    'Has many through relation':
+        'prefix': 'hasmanythru'
+        'body': 'return $this->hasManyThrough(${1:hasmany}, ${2:through});'
+    'Has one relation':
+        'prefix': 'hasone'
+        'body': 'return $this->hasOne(${1:model});'
+    'PHP class method':
+        'prefix': 'method'
+        'body': 'public function methodName($parameters)\n{\n\t${0://}\n}'
+    'PHPDoc function …':
+        'prefix': 'doc_f'
+        'body': '/**\n * ${6:undocumented function summary}\n *\n * ${7:Undocumented function long description}\n *\n * @param ${8:type} ${9:var} ${10:Description}\n * @return ${11:return type}\n */\n${1:public }function ${2:functionName}(${3:$${4:value}${5:=\'\'}})\n{\n\t${0:# code...}\n}'
