@@ -1,0 +1,5 @@
+alias a="atom ."
+alias gh="github ."
+alias nah="git checkout . && git reset --hard HEAD && git clean -df"
+alias phpunit="vendor/bin/phpunit"
+alias vm="vagrant ssh"
